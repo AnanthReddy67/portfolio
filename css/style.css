@@ -1,0 +1,219 @@
+html, body {
+  -webkit-font-smoothing: antialiased;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.name{
+	font-family:Brush Script MT;
+	font-size: 40px;
+}
+
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+body {
+  background: light gray;
+  font: 13px/1.6 "Helvetica Neue", helvetica, verdana, arial, sans-serif;
+  color: black;
+  margin: 0px;
+  overflow-y: scroll;
+  line-height: 21px;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+/* Start styling for header area*/
+header {
+    padding-top:10px;
+}
+header .container{
+  max-width:980px;
+  display: flex;
+  position: relative;
+}
+header .line {
+  border-bottom: solid 4px #7d97ad;
+  width:100%;
+}
+header .leftCol {
+  width:40%;
+  float:left;
+}
+header .rightCol {
+  width:90%;
+  text-align: right;
+  float: right;
+}
+header .rightCol .name{
+  padding-bottom:5px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+header .rightCol .career{
+  font-size:15px;
+  font-weight: normal;
+  line-height: 21px;
+}
+header .avatar {
+  background: url("../img/img18.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 80%;
+  display: inline-block;
+  width:150px;
+  height:150px;
+}
+/* End styling for header area*/
+h2.heading {
+  text-transform: uppercase;
+  margin: 1.75rem 0;
+  border-bottom: solid 1px #aaa;
+  line-height: 0px;
+  font-weight: normal;
+  color:#627788;
+}
+h2.heading span{
+  background: white;
+  padding-right:10px;
+}
+.container {
+  max-width:980px;
+  margin: 0 auto;
+  padding:10px 20px;
+}
+/* Start stylying for portfolio items*/
+#items {
+  display: flex; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+}
+#items .portfolio-item {
+  background: white;
+  width: 32%;
+  margin-bottom:2%;
+  text-align: left;
+  box-shadow: 0 2px 0 #D9E1E7;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+#items .portfolio-item img{
+  border-radius: 3px 3px 0 0;
+}
+#items .portfolio-item .text_block{
+  padding: 1.25rem;
+}
+#items .portfolio-item h3 {
+  font-size:18px;
+  color:tomato;
+}
+#items .portfolio-item:nth-child(3n-1) {
+  margin-right:2%;
+  margin-left:2%;
+}
+/* End stylying for portfolio items*/
+footer {
+  max-width:980px;
+  margin:0 auto;
+  padding:10px 20px;
+}
+/*Media Queries*/
+/*For devices with width between 600px and 850px*/
+@media screen and (min-width: 600px) and (max-width: 850px)  {
+  #items .portfolio-item{
+    width:49%;
+  }
+  #items .portfolio-item:nth-child(odd) {
+    margin-right:2%;
+    margin-left:0px;
+  }
+  #items .portfolio-item:nth-child(even) {
+    margin-right:0px;
+    margin-left:0px;
+  }
+}
+/*For devices with width up to 600px*/    
+@media screen and (max-width: 600px)  {
+  #items .portfolio-item{
+    width:99%;
+    margin-right:0!important;
+    margin-left:0!important;
+    margin-bottom:20px;
+  }
+}

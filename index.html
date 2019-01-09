@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Udacity - Portfolio">
+    <meta name="author" content="Juan Vargas">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="leftCol">
+          <span class="avatar"></span>
+        </div>
+        <div class="rightCol">
+          <h1 class="name">Rock<strong>Stars</strong></h1>
+          <h2 class="career">Rock Stars & Full Stack Web Developers</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="line"></div>
+      </div>
+    </header>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="img09.jpg" style="width:100%">
+  <div class="text">Caption One</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="img22.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="img33.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="img17.jpg" style="width:100%">
+  <div class="text">Caption Four</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    <main>
+      <div class="container">
+        <h2 class="heading"><span>Featured <strong>Work</strong></span></h2>
+        <div id="items">
+          <article class="portfolio-item">
+			
+            <img src="img1.jpg" alt="Monkey">
+            <div class="text_block">
+              <h3>The Rolling Stones</h3>
+              <p>
+The Rolling Stones are an English rock band formed in London in 1962.
+ The first stable line-up consisted of Brian Jones guitar, harmonica, Mick Jagger lead vocals, 
+ Keith Richards guitar, backing vocals, Bill Wyman bass, Charlie Watts drums, 
+ and Ian Stewart piano. 
+ Stewart was removedfrom the official line-up in 1963 but continued as a touring member until his death in 1985. 
+             </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="img2.jpg" alt="Cat">
+            <div class="text_block">
+              <h3>THE BEATLES</h3>
+              <p>
+The Beatles built their reputation playing clubs in Liverpool and Hamburg over a three-year period from 1960, 
+with Stuart Sutcliffe initially serving as bass player. The core trio of Lennon, McCartney and Harrison, together since 1958, 
+went through a succession of drummers, including Pete Best, before asking Starr to join them in 1962.</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="img3.jpg" alt="Bear">
+            <div class="text_block">
+              <h3>Led Zeppelin</h3>
+              <p>Led Zeppelin were an English rock band formed in London in 1968.
+				The group consisted of guitarist Jimmy Page, singer Robert Plant, bassist and keyboardist John Paul Jones, and drummer John Bonham.
+				The band's heavy, guitar-drivensound has led them to be cited as one of the progenitors of heavy metal.</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="img4.jpg" alt="Tiger">
+            <div class="text_block">
+              <h3>Queen (band)</h3>
+              <p> Queen are a British rock band that formed in London in 1970. 
+			  Their classic line-up was Freddie Mercury (lead vocals and piano),
+			  Brian May (lead guitar and vocals), Roger Taylor (drums and vocals), 
+			  and John Deacon (bass guitar). Their earliest works were influenced by progressive rock,
+			  hard rock and heavy metal, but the band gradually ventured into 
+			  more conventional and radio-friendly works by incorporating further styles,
+			  such as arena rock and pop rock, into their music.  </p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="img5.jpg" alt="Panda">
+            <div class="text_block">
+              <h3>David Bowie</h3>
+              <p>David Robert Jones (8 January 1947-10 January 2016), known professionally as David Bowie was an English singer, songwriter and actor.
+			  He was a leading figure in the music industry and is considered one of the most influential musicians of the 20th century, 
+			  acclaimed by critics and musicians, particularly for his innovative work during the 1970s. 
+			  His career was marked by reinvention and visual presentation, with his music and stagecraft having a significant impact on popular music. </p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="img6.jpg" alt="Whale">
+            <div class="text_block">
+              <h3>Guns N' Roses</h3>
+              <p>Guns N' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles, California, formed in 1985. 
+			  When they signed to Geffen Records in 1986, the band comprised vocalist Axl Rose, lead guitarist Slash,
+			  rhythm guitarist Izzy Stradlin, bassist Duff McKagan, and drummer Steven Adler.
+			  
+              Guns N' Roses' debut album, Appetite for Destruction (1987), reached number one on the Billboard 200 a year after its release, on the strength of "Sweet Child o' Mine", the band's only single to reach number one on the Billboard Hot 100.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p> @ <strong>Rock Stars</strong></p>
+    </footer>
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 3 seconds
+}
+</script>
+  </body>
+</html>
