@@ -1,2 +1,2 @@
 # PORTFOLIO
-Full Stack Nano Degree
+full stack nano degree
